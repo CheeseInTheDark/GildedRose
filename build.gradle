@@ -14,3 +14,5 @@ dependencies
 	testCompile 'org.powermock:powermock-module-junit4:1.5.+'
 	testCompile 'org.powermock:powermock-api-mockito:1.5.+'
 }
+
+buildDirName = '../bin'
