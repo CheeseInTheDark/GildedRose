@@ -1,6 +1,7 @@
 package gildedrose.integration;
 
 import static java.util.Collections.singletonList;
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 import java.util.Collections;
@@ -24,8 +25,8 @@ public class GildedRoseIntegrationTest
 		InventorySystem inventorySystem = new InventorySystem(conjuredItemList);
 		inventorySystem.update();
 		
-		assertThat(conjuredItem.getQuality(), Matchers.is(4));
-		assertThat(conjuredItem.getSellIn(), Matchers.is(2));
+		assertThat(conjuredItem.getQuality(), is(4));
+		assertThat(conjuredItem.getSellIn(), is(2));
 	}
 
 }
