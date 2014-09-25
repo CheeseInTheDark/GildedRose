@@ -1,0 +1,25 @@
+Kata steps:
+
+Created test to make the InventorySystem in GildedRoseTest and put the items array in it
+Created test to drive in updating of the Inventory in InventorySystem
+Created test to drive in update calls to StoreItems in Inventory
+Created test to drive in creation of StoreItems from Items in InventoryFactory and drive in StoreItemFactory
+Created test to drive in creation of a StoreItem from an Item in StoreItemFactory
+Created test to drive in creation of a ConjuredItem from an Item in StoreItemFactory
+Created test to drive in storage of an item in StoreItem
+Created test to drive in update behavior
+	*Created StoreItem test to require change to update method in ConjuredItem
+Created test to drive in sellIn behavior
+Created integration test at InventorySystem level
+	*This should have been the second test written
+
+Points of concern:
+-Use PowerMock
+-Some state-based testing in ConjuredItem
+-There is a weak but present argument that the solution can be called a rewrite
+
+Strengths:
+-Focuses directly on the new requirement
+-Works alongside legacy implementation rather than destroying it
+-Cleanliness of new code is high
+-Inventory system is easily extensible to new item types

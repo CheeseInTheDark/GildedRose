@@ -1,3 +1,5 @@
+package gildedrose.items;
+
 
 public class Item {
     public String name;
