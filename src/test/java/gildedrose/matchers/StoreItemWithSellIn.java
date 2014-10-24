@@ -14,9 +14,9 @@ public class StoreItemWithSellIn<T> extends TypeSafeMatcher<T>
 		this.sellIn = sellIn;
     }
 	
-	public static <S> StoreItemWithSellIn<S> hasSellInOf(int sellIn)
+	public static StoreItemWithSellIn<? super StoreItem> hasSellInOf(int sellIn)
 	{
-		return new StoreItemWithSellIn<S>(sellIn);
+		return new StoreItemWithSellIn<StoreItem>(sellIn);
 	}
 	
 	@Override
